@@ -28,12 +28,12 @@ const Detail = ({exerciseDetail}) => {
     <Stack gap='60px' sx={{flexDirection : {lg:'row'}, p:'20px', alignItems:'center'}}>
       <img src={gifUrl} alt={name} Loading='lazy' className='detail-image' /> 
         <Stack sx={{gap: {lg:'35px', xs:'20px'}}}>
-          <Typography variant='h3'textTransform='capitalize'>
-            {name}
-          </Typography>
-          <Typography variant='h6'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. {name} {''} molestiae omnis tenetur dolore, reiciendis asperiores {target} rerum voluptatum aliquid, atque quisquam quo hic saepe dolorem sequi fugit numquam? Quia.
-          </Typography>
+        <Typography sx={{ fontSize: { lg: '24px', xs: '18px' } }} color="#4F4C4C">
+          Exercises keep you strong.{' '}
+          <span style={{ textTransform: 'capitalize' }}>{name}</span> bup is one
+          of the best <br /> exercises to target your {target}. It will help you improve your{' '}
+          <br /> mood and gain energy.
+        </Typography>
           {extraDetail.map((item)=>(
             <Stack key={item.name} direction='row' gap='24px'  alignItems='center'>
             <Button sx={{background:'#fff2db', borderRadius:'50%', width:'100px', height:'100px'}}>
